@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>에이아이온</title>
+	<title>테라아이티</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta charset="UTF-8">
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="에이아이온" />
-	<meta property="og:url" content="http://www.ai-on.co.kr" />
+	<meta property="og:title" content="테라아이티" />
+	<meta property="og:url" content="http://www.terrait.co.kr" />
 	<meta property="og:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta property="og:image" content="http://www.ai-on.co.kr/images/ogimg.png" >
+	<meta property="og:image" content="http://www.terrait.co.kr/images/ogimg.png" >
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
-	<meta name="author" content="AI-ON">
-	<meta name="title" content="에이아이온" />
+	<meta name="author" content="TERRA IT">
+	<meta name="title" content="테라아이티" />
 	<meta name="description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta name="keywords" content="에이아이온, KIOSK, 키오스크" />
+	<meta name="keywords" content="테라아이티, KIOSK, 키오스크" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="" />
 	<meta name="twitter:creator" content="" />
 	<meta name="twitter:url" content="" />
-	<meta name="twitter:title" content="에이아이온" />
+	<meta name="twitter:title" content="테라아이티" />
 	<meta name="twitter:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta name="twitter:image" content="http://www.ai-on.co.kr/images/ogimg.png" />
-	<meta name="twitter:image:src" content="http://www.ai-on.co.kr/images/ogimg.png" />
-	<link rel="canonical" href="http://www.ai-on.co.kr">
+	<meta name="twitter:image" content="http://www.terrait.co.kr/images/ogimg.png" />
+	<meta name="twitter:image:src" content="http://www.terrait.co.kr/images/ogimg.png" />
+	<link rel="canonical" href="http://www.terrait.co.kr">
 	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" href="./styles/main.css?v=4"/>
 	<script type="text/javascript" src="./scripts/jquery.js"></script>
-	<script charset="UTF-8" class="daum_roughmap_loader_script" src="//dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+	<!--
+        2. 설치 스크립트
+        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 	<script>
 
 
-        $(function () {
+		$(function () {
 
-            function getUrlParameter(name) {
-                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-                var results = regex.exec(location.search);
-                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-            }
+			function getUrlParameter(name) {
+				name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+				var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+				var results = regex.exec(location.search);
+				return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+			}
 
 			$('#btn-go-top').on('click', function(e) {
 				e.preventDefault();
@@ -54,23 +59,23 @@
 				$('html, body').animate({scrollTop: $('#area-biz').offset().top}, 1000);
 			});
 
-            $('#btn-go-company').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({scrollTop: $('#area-company').offset().top}, 1000);
-            });
+			$('#btn-go-company').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop: $('#area-company').offset().top}, 1000);
+			});
 
-            $('#btn-go-recruit').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({scrollTop: $('#area-recruit').offset().top}, 1000);
-            });
+			$('#btn-go-recruit').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop: $('#area-recruit').offset().top}, 1000);
+			});
 
-            $('#btn-go-map').on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({scrollTop: $('#area-map').offset().top}, 1000);
-            });
+			$('#btn-go-map').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop: $('#area-map').offset().top}, 1000);
+			});
 
 
-        });
+		});
 	</script>
 </head>
 <body>
@@ -90,7 +95,7 @@
 	<section class="banner">
 		<article>
 			<div class="main_title">
-				<h2>AI <span>ON</span></h2>
+				<h2>TERRA <span>IT</span></h2>
 				<p class="txt28 bold">신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다.</p>
 				<p class="txt24">We Make New Wave With Intelligent Online Solution</p>
 			</div>
@@ -129,7 +134,7 @@
 		</article>
 	</section>
 	-->
-	
+
 	<section class="business03">
 		<article>
 			<h3 class="txt28">SI 비즈니스</h3>
@@ -138,9 +143,9 @@
 				<ul>
 					<li>
 						<div class="circle">
-							 <div class="line">
-								 <p>고객요구사항 분석</p>
-							 </div>
+							<div class="line">
+								<p>고객요구사항 분석</p>
+							</div>
 						</div>
 					</li>
 					<li>
@@ -179,7 +184,7 @@
 	<section class="company" id="area-company">
 		<article>
 			<h3 class="txt28">회사소개</h3>
-			<p class="txt24 bold">AION은 IT 비즈니스를 위한 솔루션과 시스템을 제공합니다</p>
+			<p class="txt24 bold">테라아이티는 IT 비즈니스를 위한 솔루션과 시스템을 제공합니다</p>
 			<ul>
 				<li>
 					<h4 class="company01">MOBILE BUSINESS</h4>
@@ -194,11 +199,11 @@
 				<?
 				/*
 				<li>
-					<h4 class="company02">VIDEO INTERVIEW</h4>
-					<p>직무능력을 기반으로 하는 블라인드 채용처럼 새로운
-						채용환경에 IT기술을 바탕으로 한 분석을 통해서 기업
-						인재 채용에 새로운 패러다임을 제공합니다
-					</p>
+				<h4 class="company02">VIDEO INTERVIEW</h4>
+				<p>직무능력을 기반으로 하는 블라인드 채용처럼 새로운
+					채용환경에 IT기술을 바탕으로 한 분석을 통해서 기업
+					인재 채용에 새로운 패러다임을 제공합니다
+				</p>
 				</li>
 				*/
 				?>
@@ -237,7 +242,7 @@
 	<section class="job" id="area-recruit">
 		<article>
 			<h3 class="txt28">채용정보</h3>
-			<p class="txt24 bold">에이아이온은 창의적이고 열정적인 인재를 찾고 있습니다.</p>
+			<p class="txt24 bold">테라아이티는 창의적이고 열정적인 인재를 찾고 있습니다.</p>
 			<div class="item">
 				<table class="web">
 					<tr>
@@ -320,16 +325,19 @@
 	<section class="map" id="area-map">
 		<article>
 			<h3 class="txt28">오시는길</h3>
-			<p class="txt24 bold">에이아이온으로 오시는 길입니다.</p>
+			<p class="txt24 bold">테라아이티로 오시는 길입니다.</p>
 			<div class="map_way">
-				<div id="daumRoughmapContainer1521377464801" class="root_daum_roughmap root_daum_roughmap_landing mapwidth"></div>
+
+				<!-- * 카카오맵 - 지도퍼가기 -->
+				<!-- 1. 지도 노드 -->
+				<div id="daumRoughmapContainer1641788151285" class="root_daum_roughmap root_daum_roughmap_landing mapwidth"></div>
 				<div class="fleft">
 					<p class="address">주소</p>
-					<p>서울시 금천구 벚꽃로 254, 2층 208-2호(가산동, 월드메르디앙1차)</p>
-					<p class="contact">연락처</p>
-					<p>TEL. 070-4090-8901, FAX. 02-6008-5255</p>
+					<p>서울 구로구 중앙로6길 16 (동양미래대학교 DMMC)</p>
+					<!--<p class="contact">연락처</p>-->
+					<!--<p>TEL. 070-4090-8901, FAX. 02-6008-5255</p>-->
 					<p class="trans">교통</p>
-					<p>가산디지털단지역 1호선 1번출구, 7호선 4번출구</p>
+					<p>구일역 1호선 2번출구 (동양미래대학교)</p>
 				</div>
 
 			</div>
@@ -339,13 +347,17 @@
 	<div class="btn_top">
 		<a href="#" id="btn-go-top">TOP</a>
 	</div>
+
+	<!-- 3. 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1641788151285",
+			"key" : "28qux",
+			"mapWidth" : "100%",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+
+</div>
 </body>
-<script charset="UTF-8">
-    new daum.roughmap.Lander({
-        "timestamp" : "1521377464801",
-        "key" : "n9pr",
-        "mapWidth" : "1080",
-        "mapHeight" : "330"
-    }).render();
-</script>
 </html>
