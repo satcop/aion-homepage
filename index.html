@@ -1,361 +1,658 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>테라아이티</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta charset="UTF-8">
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="테라아이티" />
-	<meta property="og:url" content="http://www.terrait.co.kr" />
-	<meta property="og:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta property="og:image" content="http://www.terrait.co.kr/images/ogimg.png" >
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
-	<meta name="author" content="TERRA IT">
-	<meta name="title" content="테라아이티" />
-	<meta name="description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta name="keywords" content="테라아이티, KIOSK, 키오스크" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="" />
-	<meta name="twitter:creator" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:title" content="테라아이티" />
-	<meta name="twitter:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다." />
-	<meta name="twitter:image" content="http://www.terrait.co.kr/images/ogimg.png" />
-	<meta name="twitter:image:src" content="http://www.terrait.co.kr/images/ogimg.png" />
-	<link rel="canonical" href="http://www.terrait.co.kr">
-	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>에이아이온</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="에이아이온"/>
+    <meta property="og:url" content="http://www.ai-on.co.kr"/>
+    <meta property="og:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다."/>
+    <meta property="og:image" content="http://www.ai-on.co.kr/images/ogimg.png">
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="author" content="AI ON">
+    <meta name="title" content="에이아이온"/>
+    <meta name="description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다."/>
+    <meta name="keywords" content="에이아이온, KIOSK, 키오스크"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:creator" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:title" content="에이아이온"/>
+    <meta name="twitter:description" content="신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다."/>
+    <meta name="twitter:image" content="http://www.ai-on.co.kr/images/ogimg.png"/>
+    <meta name="twitter:image:src" content="http://www.ai-on.co.kr/images/ogimg.png"/>
+    <link rel="canonical" href="http://www.ai-on.co.kr">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="./styles/main.css?v=4"/>
-	<script type="text/javascript" src="./scripts/jquery.js"></script>
+    <link rel="stylesheet" href="./styles/main.css?v=4"/>
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
 
-	<!--
+    <!--
         2. 설치 스크립트
         * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
     -->
-	<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-	<script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script>
 
 
-		$(function () {
+        $(function () {
 
-			function getUrlParameter(name) {
-				name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-				var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-				var results = regex.exec(location.search);
-				return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-			}
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                var results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            }
 
-			$('#btn-go-top').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({scrollTop: $('#div-top').offset().top}, 1000);
-			});
+            $('#btn-go-top').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: $('#div-top').offset().top}, 1000);
+            });
 
-			$('#btn-go-biz').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({scrollTop: $('#area-biz').offset().top}, 1000);
-			});
+            $('#btn-go-biz').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: $('#area-biz').offset().top}, 1000);
+            });
 
-			$('#btn-go-company').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({scrollTop: $('#area-company').offset().top}, 1000);
-			});
+            $('#btn-go-company').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: $('#area-company').offset().top}, 1000);
+            });
 
-			$('#btn-go-recruit').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({scrollTop: $('#area-recruit').offset().top}, 1000);
-			});
+            $('#btn-go-recruit').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: $('#area-recruit').offset().top}, 1000);
+            });
 
-			$('#btn-go-map').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({scrollTop: $('#area-map').offset().top}, 1000);
-			});
+            $('#btn-go-map').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: $('#area-map').offset().top}, 1000);
+            });
 
 
-		});
-	</script>
+        });
+    </script>
 </head>
 <body>
 <div class="wrap" id="div-top">
-	<header>
-		<div class="top">
-			<a href="/" class="logo"></a>
-			<ul class="gnb">
-				<li><a href="#" id="btn-go-biz">사업영역</a></li>
-				<li><a href="#" id="btn-go-company">회사소개</a></li>
-				<li><a href="#" id="btn-go-recruit">채용안내</a></li>
-				<li><a href="#" id="btn-go-map">오시는길</a></li>
-			</ul>
-		</div>
-	</header>
-	<div class="header_space"></div>
-	<section class="banner">
-		<article>
-			<div class="main_title">
-				<h2>TERRA <span>IT</span></h2>
-				<p class="txt28 bold">신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다.</p>
-				<p class="txt24">We Make New Wave With Intelligent Online Solution</p>
-			</div>
-		</article>
-	</section>
-	<section class="business01" id="area-biz">
-		<article>
-			<ul class="mobileservice">
-				<li>
-					<p class="service01">MOBILE WEB</p>
-				</li>
-				<li>
-					<p class="service02">SERVICE CONSULTING</p>
-				</li>
-				<li>
-					<p class="service03">UI/UX DESIGN</p>
-				</li>
-				<li>
-					<p class="service04">APP & WEB DEVELOPMENT</p>
-				</li>
-				<li>
-					<p class="service05">KIOSK SOLUTION</p>
-				</li>
-			</ul>
-		</article>
-	</section>
+    <header>
+        <div class="top">
+            <a href="/" class="logo"></a>
+            <ul class="gnb">
+                <li><a href="#" id="btn-go-biz">사업영역</a></li>
+                <li><a href="#" id="btn-go-company">회사소개</a></li>
+                <li><a href="#" id="btn-go-recruit">채용안내</a></li>
+                <li><a href="#" id="btn-go-map">오시는길</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="header_space"></div>
+    <section class="banner">
+        <article>
+            <div class="main_title">
+                <h2>AI <span>ON</span></h2>
+                <p class="txt28 bold">신뢰와 경험을 바탕으로 국내외 IT 비즈니스의 새로운 흐름을 이끌어 가겠습니다.</p>
+                <p class="txt24">We Make New Wave With Intelligent Online Solution</p>
+            </div>
+        </article>
+    </section>
+    <section class="business01" id="area-biz">
+        <article>
+            <ul class="mobileservice">
+                <li>
+                    <p class="service01">MOBILE WEB</p>
+                </li>
+                <li>
+                    <p class="service02">SERVICE CONSULTING</p>
+                </li>
+                <li>
+                    <p class="service03">UI/UX DESIGN</p>
+                </li>
+                <li>
+                    <p class="service04">APP & WEB DEVELOPMENT</p>
+                </li>
+                <li>
+                    <p class="service05">KIOSK SOLUTION</p>
+                </li>
+            </ul>
+        </article>
+    </section>
 
-	<!--
-	<section class="business02">
-		<article>
-			<h3 class="txt28">원격 면접 시스템</h3>
-			<p class="txt24 bold mt50">ONLINE INTERVIEW WEB/APP/BOOTH</p>
-			<p class="txt24 bold">ONLINE JOB COACHING</p>
-			<p class="txt24 bold">INTELLIGENT JOB MATCHING</p>
-			<p class="txt24 bold">INTERVIEW/EMPLOYMENT PLATFORM SYSTEM</p>
-		</article>
-	</section>
-	-->
+    <!--
+    <section class="business02">
+        <article>
+            <h3 class="txt28">원격 면접 시스템</h3>
+            <p class="txt24 bold mt50">ONLINE INTERVIEW WEB/APP/BOOTH</p>
+            <p class="txt24 bold">ONLINE JOB COACHING</p>
+            <p class="txt24 bold">INTELLIGENT JOB MATCHING</p>
+            <p class="txt24 bold">INTERVIEW/EMPLOYMENT PLATFORM SYSTEM</p>
+        </article>
+    </section>
+    -->
 
-	<section class="business03">
-		<article>
-			<h3 class="txt28">SI 비즈니스</h3>
-			<div class="graph">
-				<div class="title"><div><p class="txt24 bold">SYSTEM INTEGRATION</p></div></div>
-				<ul>
-					<li>
-						<div class="circle">
-							<div class="line">
-								<p>고객요구사항 분석</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="circle">
-							<div class="line">
-								<p>서비스 전략수립</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="circle">
-							<div class="line">
-								<p>서비스 전략컨설팅</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="circle">
-							<div class="line">
-								<p>서비스 구축</p>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="circle">
-							<div class="line">
-								<p>서비스 운영</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</article>
-	</section>
+    <section class="business03">
+        <article>
+            <h3 class="txt28">SI 비즈니스</h3>
+            <div class="graph">
+                <div class="title">
+                    <div><p class="txt24 bold">SYSTEM INTEGRATION</p></div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="circle">
+                            <div class="line">
+                                <p>고객요구사항 분석</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="line">
+                                <p>서비스 전략수립</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="line">
+                                <p>서비스 전략컨설팅</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="line">
+                                <p>서비스 구축</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle">
+                            <div class="line">
+                                <p>서비스 운영</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
 
-	<section class="company" id="area-company">
-		<article>
-			<h3 class="txt28">회사소개</h3>
-			<p class="txt24 bold">테라아이티는 IT 비즈니스를 위한 솔루션과 시스템을 제공합니다</p>
-			<ul>
-				<li>
-					<h4 class="company01">MOBILE BUSINESS</h4>
-					<p>빠르게 변화하고 있는 모바일 환경과 디바이스에 맞추어
-						더욱 고도화된 비즈니스를 고객에게 제공하고자
-						첨단 트렌드가 반영된 다양한 플랫폼을
-						구축/운영/기획/개발하고 있습니다.
-					</p>
-				</li>
+    <section class="company" id="area-company">
+        <article>
+            <h3 class="txt28">회사소개</h3>
+            <p class="txt24 bold">에이아이온은 IT 비즈니스를 위한 솔루션과 시스템을 제공합니다</p>
+            <ul>
+                <li>
+                    <h4 class="company01">MOBILE BUSINESS</h4>
+                    <p>빠르게 변화하고 있는 모바일 환경과 디바이스에 맞추어
+                        더욱 고도화된 비즈니스를 고객에게 제공하고자
+                        첨단 트렌드가 반영된 다양한 플랫폼을
+                        구축/운영/기획/개발하고 있습니다.
+                    </p>
+                </li>
 
-				<!--
-				<li>
-				<h4 class="company02">VIDEO INTERVIEW</h4>
-				<p>직무능력을 기반으로 하는 블라인드 채용처럼 새로운
-					채용환경에 IT기술을 바탕으로 한 분석을 통해서 기업
-					인재 채용에 새로운 패러다임을 제공합니다
-				</p>
-				</li>
-				-->
+                <!--
+                <li>
+                <h4 class="company02">VIDEO INTERVIEW</h4>
+                <p>직무능력을 기반으로 하는 블라인드 채용처럼 새로운
+                    채용환경에 IT기술을 바탕으로 한 분석을 통해서 기업
+                    인재 채용에 새로운 패러다임을 제공합니다
+                </p>
+                </li>
+                -->
 
-				<li>
-					<h4 class="company02">KIOSK BUSINESS</h4>
-					<p>
-						지능형 모바일 연동 KIOSK 플랫폼을 기반으로 하는 솔루션을 제공합니다.
-					</p>
-				</li>
+                <li>
+                    <h4 class="company02">KIOSK BUSINESS</h4>
+                    <p>
+                        지능형 모바일 연동 KIOSK 플랫폼을 기반으로 하는 솔루션을 제공합니다.
+                    </p>
+                </li>
 
-				<li>
-					<h4 class="company03">WEB BUSINESS</h4>
-					<p>고객의 경영환경과 요구에 맞게 기존 시스템을
-						통합하거나 새로운 시스템을 구축하는 서비스를
-						제공합니다.
-					</p>
-				</li>
+                <li>
+                    <h4 class="company03">WEB BUSINESS</h4>
+                    <p>고객의 경영환경과 요구에 맞게 기존 시스템을
+                        통합하거나 새로운 시스템을 구축하는 서비스를
+                        제공합니다.
+                    </p>
+                </li>
 
-			</ul>
-		</article>
-	</section>
+            </ul>
+        </article>
+    </section>
 
-	<section class="vision">
-		<article>
-			<h3 class="txt28">VISION</h3>
-			<p class="txt24 bold">IT비즈니스 성공을 위한 최고의 기술력으로 최선을 다하여 작지만 강한 글로벌 기업을 추구합니다.</p>
-			<div class="imgbox web">
-				<img src="./images/vision.png">
-			</div>
-			<div class="imgbox mobile">
-				<img src="./images/vision2.png">
-			</div>
-		</article>
-	</section>
+    <section class="vision">
+        <article>
+            <h3 class="txt28">VISION</h3>
+            <p class="txt24 bold">IT비즈니스 성공을 위한 최고의 기술력으로 최선을 다하여 작지만 강한 글로벌 기업을 추구합니다.</p>
+            <div class="imgbox web">
+                <img src="./images/vision.png">
+            </div>
+            <div class="imgbox mobile">
+                <img src="./images/vision2.png">
+            </div>
+        </article>
+    </section>
 
-	<section class="job" id="area-recruit">
-		<article>
-			<h3 class="txt28">채용정보</h3>
-			<p class="txt24 bold">테라아이티는 창의적이고 열정적인 인재를 찾고 있습니다.</p>
-			<div class="item">
-				<table class="web">
-					<tr>
-						<th>
-							<p>지원방법</p>
-						</th>
-						<td colspan="3">
-							<p>온라인 입사지원</p>
-						</td>
-					</tr>
-					<tr>
-						<th><p>채용절차</p></th>
-						<td colspan="3">
-							<p>
-								<span>서류전형 및 면접</span>
-								<span>2차 면접 및 직무능력</span>
-								<span>건강검진</span>
-								<span>최종합격</span>
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<th><p>자격조건</p></th>
-						<td>
-							<p>- 남자의 경우 병역필 또는 면제자</p>
-							<p>- 해외여행에 결격사유가 없는자</p>
-							<p>- 지원부서에 부합하는 직무능력을 갖춘자</p>
-							<p>- 창의적이고 도전적인 마인드를 갖춘자</p>
-						</td>
-						<th><p>제출서류</p></th>
-						<td>
-							<p>- 입사지원서, 자기소개서</p>
-							<p>- 경력증명서(경력이 있을 경우)</p>
-							<p>- 자격증사본(자격증이 있을 경우)</p>
-						</td>
-					</tr>
-				</table>
-				<table class="mobile">
-					<tr>
-						<th>
-							<p>지원방법</p>
-						</th>
-						<td colspan="3">
-							<p>온라인 입사지원</p>
-						</td>
-					</tr>
-					<tr>
-						<th><p>채용절차</p></th>
-						<td colspan="3">
-							<p>
-								<span>서류전형 및 면접</span>
-								<span>2차 면접 및 직무능력</span>
-								<span>건강검진</span>
-								<span>최종합격</span>
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<th><p>자격조건</p></th>
-						<td colspan="3">
-							<p>- 남자의 경우 병역필 또는 면제자</p>
-							<p>- 해외여행에 결격사유가 없는자</p>
-							<p>- 지원부서에 부합하는 직무능력을 갖춘자</p>
-							<p>- 창의적이고 도전적인 마인드를 갖춘자</p>
-						</td>
-					</tr>
-					<tr>
-						<th><p>제출서류</p></th>
-						<td colspan="3">
-							<p>- 입사지원서, 자기소개서</p>
-							<p>- 경력증명서(경력이 있을 경우)</p>
-							<p>- 자격증사본(자격증이 있을 경우</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</article>
-	</section>
+    <section class="job" id="area-recruit">
+        <article>
+            <h3 class="txt28">채용정보</h3>
+            <p class="txt24 bold">에이아이온은 창의적이고 열정적인 인재를 찾고 있습니다.</p>
+            <div class="item">
+                <table class="web">
+                    <tr>
+                        <th>
+                            <p>지원방법</p>
+                        </th>
+                        <td colspan="3">
+                            <p>온라인 입사지원</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>채용절차</p></th>
+                        <td colspan="3">
+                            <p>
+                                <span>서류전형 및 면접</span>
+                                <span>2차 면접 및 직무능력</span>
+                                <span>건강검진</span>
+                                <span>최종합격</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>자격조건</p></th>
+                        <td>
+                            <p>- 남자의 경우 병역필 또는 면제자</p>
+                            <p>- 해외여행에 결격사유가 없는자</p>
+                            <p>- 지원부서에 부합하는 직무능력을 갖춘자</p>
+                            <p>- 창의적이고 도전적인 마인드를 갖춘자</p>
+                        </td>
+                        <th><p>제출서류</p></th>
+                        <td>
+                            <p>- 입사지원서, 자기소개서</p>
+                            <p>- 경력증명서(경력이 있을 경우)</p>
+                            <p>- 자격증사본(자격증이 있을 경우)</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="mobile">
+                    <tr>
+                        <th>
+                            <p>지원방법</p>
+                        </th>
+                        <td colspan="3">
+                            <p>온라인 입사지원</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>채용절차</p></th>
+                        <td colspan="3">
+                            <p>
+                                <span>서류전형 및 면접</span>
+                                <span>2차 면접 및 직무능력</span>
+                                <span>건강검진</span>
+                                <span>최종합격</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>자격조건</p></th>
+                        <td colspan="3">
+                            <p>- 남자의 경우 병역필 또는 면제자</p>
+                            <p>- 해외여행에 결격사유가 없는자</p>
+                            <p>- 지원부서에 부합하는 직무능력을 갖춘자</p>
+                            <p>- 창의적이고 도전적인 마인드를 갖춘자</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><p>제출서류</p></th>
+                        <td colspan="3">
+                            <p>- 입사지원서, 자기소개서</p>
+                            <p>- 경력증명서(경력이 있을 경우)</p>
+                            <p>- 자격증사본(자격증이 있을 경우</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
 
-	<section class="map" id="area-map">
-		<article>
-			<h3 class="txt28">오시는길</h3>
-			<p class="txt24 bold">테라아이티로 오시는 길입니다.</p>
-			<div class="map_way">
+    <section class="map" id="area-map">
+        <article>
+            <h3 class="txt28">오시는길</h3>
+            <p class="txt24 bold">에이아이온으로 오시는 길입니다.</p>
+            <div class="map_way">
 
-				<!-- * 카카오맵 - 지도퍼가기 -->
-				<!-- 1. 지도 노드 -->
-				<div id="daumRoughmapContainer1641788151285" class="root_daum_roughmap root_daum_roughmap_landing mapwidth"></div>
-				<div class="fleft">
-					<p class="address">주소</p>
-					<p>서울 구로구 중앙로6길 16 (동양미래대학교 DMMC)</p>
-					<!--<p class="contact">연락처</p>-->
-					<!--<p>TEL. 070-4090-8901, FAX. 02-6008-5255</p>-->
-					<p class="trans">교통</p>
-					<p>구일역 1호선 2번출구 (동양미래대학교)</p>
-				</div>
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1641788151285"
+                     class="root_daum_roughmap root_daum_roughmap_landing mapwidth"></div>
+                <div class="fleft">
+                    <p class="address">주소</p>
+                    <p>서울 구로구 중앙로6길 16 (동양미래대학교 DMMC)</p>
+                    <!--<p class="contact">연락처</p>-->
+                    <!--<p>TEL. 070-4090-8901, FAX. 02-6008-5255</p>-->
+                    <p class="trans">교통</p>
+                    <p>구일역 1호선 2번출구 (동양미래대학교)</p>
+                </div>
 
-			</div>
-		</article>
-	</section>
+            </div>
+        </article>
+    </section>
 
-	<div class="btn_top">
-		<a href="#" id="btn-go-top">TOP</a>
-	</div>
+    <div class="btn_top">
+        <a href="#" id="btn-go-top">TOP</a>
+    </div>
 
-	<!-- 3. 실행 스크립트 -->
-	<script charset="UTF-8">
-		new daum.roughmap.Lander({
-			"timestamp" : "1641788151285",
-			"key" : "28qux",
-			"mapWidth" : "1080",
-			"mapHeight" : "360"
-		}).render();
-	</script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp": "1641788151285",
+            "key": "28qux",
+            "mapWidth": "1080",
+            "mapHeight": "360"
+        }).render();
+    </script>
 
 </div>
+
+
+<style>
+
+    .modal {
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal button {
+        border: 0;
+        background: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+
+    .modal.layerPop1 {
+        border: 0;
+    }
+
+    .modal::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .6;
+        z-index: -1;
+    }
+
+    .modal #mask {
+        display: none !important;
+    }
+
+    .modal.auto-height .modal__inner {
+        height: auto;
+    }
+
+    .modal .modal__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translate(0.5px, 0.5px);
+        min-width: 400px;
+        width: 400px;
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+    }
+
+    .modal .modal__inner.w480 {
+        width: 480px;
+        max-width: 480px;
+        padding: 37px 0 0;
+    }
+
+    .modal .modal__inner.notice {
+        width: 640px;
+        max-width: 640px;
+        max-height: calc(100vh - 200px);
+        padding: 38px 0 0;
+        color: #000000;
+    }
+
+    .modal .modal__inner.notice .modal__contents {
+        padding: 0 0 42px;
+    }
+
+    .modal .modal__inner.notice .modal-content {
+        padding: 0 29px 0 36px;
+        font-size: 19px;
+        letter-spacing: -1px;
+        line-height: 25px;
+    }
+
+    .modal .modal__inner.notice .modal-content.scrollBar {
+        height: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Apple SD Gothic Neo", "Roboto", "notosans", sans-serif;
+        max-height: calc(100vh - 480px);
+        overflow-y: auto;
+    }
+
+    .modal .modal__inner.notice .no-margin-top {
+        margin-top: 0;
+    }
+
+    .modal .modal__inner.w480 .modal__header {
+        padding: 0 36px 29px 0;
+        margin: 0 36px;
+    }
+
+    .modal .modal__inner.w480 .modal__contents {
+        padding: 0 0 34px;
+    }
+
+    .modal .modal__inner.popup-agree .modal__contents {
+        padding: 20px 0 14px;
+    }
+
+    .modal .modal__header {
+        padding: 37px 36px 0;
+        background: 0;
+        letter-spacing: -.5px;
+    }
+
+    .modal .modal__header em {
+        color: #3617CE;
+    }
+
+    .modal .modal__contents {
+        padding: 30px 0 36px 0;
+        background: #fff;
+    }
+
+    .modal .modal__contents .inPop {
+        padding: 0;
+    }
+
+    .modal .modal__contents em {
+        color: #3617CE;
+    }
+
+    .modal .modal__close {
+        position: absolute;
+        top: 26px;
+        right: 26px;
+    }
+
+    .modal .modal__close::before {
+        content: '';
+        display: block;
+        background-position: -1079px -359px;
+        width: 22px;
+        height: 22px;
+        background-size: 1180px 532px;
+    }
+
+    .modal .modal__buttons {
+        display: flex;
+        padding: 0 36px 35px;
+        background: #fff;
+    }
+
+    .modal .modal__buttons .button {
+        width: 100%;
+        max-width: 408px;
+        min-height: 64px;
+        font-size: 19px;
+    }
+
+    .modal .modal__buttons--col .button ~ .button {
+        margin-left: 12px;
+    }
+
+    .modal .modal__buttons--row {
+        flex-direction: column;
+        padding-bottom: 28px;
+    }
+
+    .modal .modal__buttons--row .button {
+        width: auto;
+    }
+
+    .modal .modal__buttons--row .modal__additional {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #e5e5e5;
+        margin: 36px -36px -5px;
+        padding: 27px 36px 0;
+    }
+
+    .modal .modal__buttons--row .modal__additional .additional-button {
+        position: relative;
+        top: -2px;
+        margin-left: auto;
+        font-size: 20px;
+        color: #444;
+        font-weight: 600;
+    }
+
+    .modal .modal__buttons--row .checkbox-item {
+        margin-top: -3px;
+        text-align: right;
+    }
+
+    .modal .modal__buttons--row .checkbox-item .checkbox--text {
+        font-size: 17px;
+        color: #444;
+    }
+
+    .modal #mask {
+        background: #000;
+        opacity: .6;
+    }
+
+    .modal .modal-title {
+        line-height: 36px;
+        font-size: 26px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .modal .modal-title + .modal-sub-text {
+        margin-top: 6px;
+    }
+
+    .modal .modal-sub-text {
+        color: #444;
+        font-size: 15px;
+    }
+
+    .modal .modal__close {
+        position: absolute;
+        top: 26px;
+        right: 26px;
+    }
+
+    .modal .modal__close::before {
+        content: '';
+        display: block;
+        background-position: -1079px -359px;
+        width: 22px;
+        height: 22px;
+        background-size: 1180px 532px;
+    }
+
+    .modal .modal__buttons--row .modal__additional .additional-button {
+        position: relative;
+        top: -2px;
+        margin-left: auto;
+        font-size: 20px;
+        color: #444;
+        font-weight: 600;
+    }
+
+</style>
+
+<div id="POPUP_001" class="layerPop1 modal" style="display: block; position: fixed;">
+
+    <div class="modal__inner w480 notice">
+        <div id="modal-text">
+            <div class="modal__header"><h2 class="modal-title">
+                에이아이온은 재택 근무 아르바이트를 구인하지 않습니다.
+            </h2></div>
+            <div class="modal__contents">
+                <div class="modal-content scrollBar">
+                    <p>
+                        최근,
+                        알바몬등에 저희 회사명을 사칭해서 재택근무 및 프리랜서 채용 모집을 통해서 사기로 피해를 보는 취업 준비생들이 발생하고 있습니다.
+                        <br/>에이아이온은 이런 재택근무 및 프리랜서 채용 모집을 하지 않고 있습니다.
+                        <br/>현재 이와 관련해서 경찰서에 피해 신고를 한 상태입니다.
+                        <br/>이부분에 대해서 피해가 발행하지 않도록 주의 바랍니다.
+
+                        <br/>
+                        <br/>2025.05.01 에이아이온 대표
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__buttons modal__buttons--row">
+            <div class="modal__additional no-margin-top">
+                <!--
+                <div class="checkbox-item">
+                    <label id="inputcheck01" class="checkbox__label">
+                        <input type="checkbox" id="inputcheck01" class="checkbox__input">
+                        <span class="checkbox&#45;&#45;text">하루동안 열지 않음</span>
+                    </label>
+                </div>
+                -->
+                <button type="button"
+                        onclick="$('#POPUP_001').hide()"
+                        class="additional-button" id="expiredCloseBtn">닫기
+                </button>
+            </div>
+        </div>
+        <button type="button"
+                onclick="$('#POPUP_001').hide()"
+                id="expiredCloseIcon" class="modal__close">
+            <span class="hidden">X</span>
+        </button>
+    </div>
+    <!-- 페이지 진입시 열리는 popup의 경우 #mask 추가 -->
+    <div id="mask" style="display:block;z-index:-1;"></div>
+</div>
+
 </body>
 </html>
