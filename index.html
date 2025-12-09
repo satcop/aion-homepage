@@ -33,16 +33,10 @@
     <link rel="stylesheet" href="./styles/main.css?v=4"/>
     <script type="text/javascript" src="./scripts/jquery.js"></script>
 
-    <!--
-        2. 설치 스크립트
-        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-    -->
-    <script charset="UTF-8" class="daum_roughmap_loader_script"
-            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-    <script>
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-
-        $(function () {
+    $(function () {
 
             function getUrlParameter(name) {
                 name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -332,15 +326,17 @@
 
                 <!-- * 카카오맵 - 지도퍼가기 -->
                 <!-- 1. 지도 노드 -->
-                <div id="daumRoughmapContainer1641788151285"
+                <div id="daumRoughmapContainer1765301839116"
                      class="root_daum_roughmap root_daum_roughmap_landing mapwidth"></div>
                 <div class="fleft">
                     <p class="address">주소</p>
-                    <p>서울 구로구 중앙로6길 16 (동양미래대학교 DMMC)</p>
+                    <p>
+                        서울 금천구 가산디지털1로 120, 8층 810호 (가산동, 지밸리 창업복지센터)
+                    </p>
                     <!--<p class="contact">연락처</p>-->
                     <!--<p>TEL. 070-4090-8901, FAX. 02-6008-5255</p>-->
                     <p class="trans">교통</p>
-                    <p>구일역 1호선 2번출구 (동양미래대학교)</p>
+                    <p>가산디지털단지역(1호선/7호선) 7번출구</p>
                 </div>
 
             </div>
@@ -354,10 +350,10 @@
     <!-- 3. 실행 스크립트 -->
     <script charset="UTF-8">
         new daum.roughmap.Lander({
-            "timestamp": "1641788151285",
-            "key": "28qux",
-            "mapWidth": "1080",
-            "mapHeight": "360"
+            "timestamp" : "1765301839116",
+            "key" : "dm3rqhptmjt",
+            "mapWidth" : "1080",
+            "mapHeight" : "460"
         }).render();
     </script>
 
