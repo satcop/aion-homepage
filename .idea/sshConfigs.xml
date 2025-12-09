@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="homepage1.ai-on.co.kr" id="8e707daf-8702-4a37-8977-43dec3046b76" port="22" nameFormat="DESCRIPTIVE" username="homepage1" useOpenSSHConfig="true" />
-    </configs>
-  </component>
-</project>
